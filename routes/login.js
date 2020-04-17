@@ -37,7 +37,7 @@ app.post('/', (req, res) => {
             });
         }
 
-        // Crear un tocket !!
+        // Crear un tocken !!
         usuarioDB.password = ':)';
         var token = jwt.sign({ usuario: usuarioDB }, SEED, { expiresIn: 14400 }); //4 horas
         
